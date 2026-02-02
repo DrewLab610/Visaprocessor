@@ -12,7 +12,7 @@
 
   <!-- NAVBAR -->
   <header>
-    <div class="logo">✈️ VisaFlow</div>
+    <div class="logo"><img src="img/visa logo img.jpg" alt="">VisaFlow</div>
 
     <nav>
       <ul>
@@ -46,7 +46,7 @@
       </p>
 
       <div class="cta-buttons">
-        <button class="btn-cta btn-start">Start Your Application</button>
+        <a href="#visa-form" class="btn-cta btn-start">Start Your Application</a>
         <button class="btn-cta btn-status">Check Visa Status</button>
       </div>
 
@@ -69,6 +69,70 @@
       </div>
     </div>
   </section>
-  
+  <h1 style="text-align: center; color: #0077ff; margin-top: 130px; margin-bottom: -30px;">Apply For Your Visa Here</h1>
+  <section class="visa-section" id="visa-form">
+
+  <h2>Visa Application Details</h2>
+
+  <form class="visa-form">
+    <div class="form-group">
+      <label>Full Name</label>
+      <input type="text" placeholder="Enter full name" required>
+    </div>
+
+    <div class="form-group">
+      <label>Email Address</label>
+      <input type="email" placeholder="Enter email" required>
+    </div>
+
+    <div class="form-group">
+      <label>Nationality</label>
+      <input type="text" placeholder="Enter nationality" required>
+    </div>
+
+    <div class="form-group">
+      <label>Passport Number</label>
+      <input type="text" placeholder="Enter passport number" required>
+    </div>
+
+    <div class="form-group">
+      <label>Passport Expiry Date</label>
+      <input type="date" required>
+    </div>
+
+    <div class="form-group">
+      <label>Visa Type</label>
+      <select required>
+        <option value="">Select visa type</option>
+        <option>Tourist Visa</option>
+        <option>Student Visa</option>
+        <option>Work Visa</option>
+        <option>Business Visa</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label>Travel Date</label>
+      <input type="date" required>
+    </div>
+
+    <div class="form-group full">
+      <label>Additional Information</label>
+      <textarea placeholder="Optional notes"></textarea>
+    </div>
+
+    <button type="submit">Submit Visa Details</button>
+  </form>
+</section>
+
+
+<script>
+  document.querySelector(".btn-start").addEventListener("click", () => {
+    document.querySelector("#visa-form").scrollIntoView({
+      behavior: "smooth"
+    });
+  });
+</script>
+
 </body>
 </html>
